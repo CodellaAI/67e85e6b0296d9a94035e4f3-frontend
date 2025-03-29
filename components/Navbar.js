@@ -34,10 +34,10 @@ export default function Navbar() {
 
   return (
     <Disclosure as="nav" 
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed w-full z-50 transition-all duration-500 ease-in-out border border-solid ${
         scrolled 
-          ? 'glass-dark py-2' 
-          : 'bg-transparent py-4'
+          ? 'bg-black/20 backdrop-blur-md border-white/5 py-2 shadow-lg' 
+          : 'bg-transparent backdrop-blur-none border-transparent py-4 shadow-none'
       }`}
     >
       {({ open }) => (
